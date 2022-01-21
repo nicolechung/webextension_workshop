@@ -1,0 +1,31 @@
+{
+    "manifest_version": 2,
+    "name": "Pet replace",
+    "version": "0.1",
+    "description": "Replace your images with pets",
+    "browser_action": {
+      "default_icon": "./assets/gallery.png",
+      "default_popup": "popup/index.html"
+    },
+    "icons": {
+      "48": "./assets/gallery_48.png",
+      "64": "./assets/gallery_64.png"
+    },
+    "permissions": [
+      "tabs",
+      "storage",
+      "activeTab",
+      "http://*/",
+      "https://*/"
+    ],
+    "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["contentScripts/index.tsx"]
+    }],
+    "web_accessible_resources": [
+      "./assets/ben-michel-Uyn3kXAaZX8-unsplash.jpg",
+      "./assets/nine-koepfer-lpgAlv8I7V8-unsplash.jpg",
+      "./assets/cat_512.png",
+      "./assets/dog_512.png"
+    ]
+  }
