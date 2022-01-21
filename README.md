@@ -11,10 +11,10 @@ yarn
 ## Cleaning
 
 ```
-yarn clean
+yarn clean:dist
 ```
 
-This will delete the node_modules folder.
+This will delete the `dist` folder.
 
 
 ## Development mode
@@ -24,6 +24,15 @@ yarn start
 ```
 
 This mode will work in both Chrome and Firefox.
+
+
+## Build mode
+
+```
+yarn build
+```
+
+Warning: This builds into `dist/webext-prod`!
 
 
 ## Attribution

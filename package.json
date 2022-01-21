@@ -9,9 +9,9 @@
     "webext-prod": {}
   },
   "scripts": {
-    "clean": "rm -rf dist",
-    "start": "yarn run clean && parcel src/manifest.json --host localhost --target webext-dev --config @parcel/config-webextension",
-    "build": "yarn run clean && parcel build src/manifest.json --target webext-prod --config @parcel/config-webextension"
+    "clean:dist": "rm -rf dist",
+    "start": "yarn run clean:dist && parcel src/manifest.json --host localhost --target webext-dev --config @parcel/config-webextension",
+    "build": "yarn run clean:dist && parcel build src/manifest.json --target webext-prod --config @parcel/config-webextension"
   },
   "devDependencies": {
     "@parcel/config-webextension": "^2.0.1",
