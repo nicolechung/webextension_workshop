@@ -14,7 +14,7 @@
     "build": "yarn run clean:dist && parcel build src/manifest.json --target webext-prod --config @parcel/config-webextension"
   },
   "devDependencies": {
-    "@parcel/config-webextension": "2.0.1",
+    "@parcel/config-webextension": "2.3.1",
     "autoprefixer": "10.4.1",
     "parcel": "2.0.1",
     "postcss": "8.4.5",
