@@ -4,11 +4,11 @@
   "version": "0.1",
   "description": "Replace your images with pets",
   "browser_action": {
-    "default_icon": "./assets/gallery_64.png",
+    "default_icon": "./assets/gallery.png",
     "default_popup": "popup/index.html"
   },
   "icons": {
-    "16": "./assets/gallery_16.png",
+    "48": "./assets/gallery_48.png",
     "64": "./assets/gallery_64.png"
   },
   "permissions": ["tabs", "storage", "activeTab", "http://*/", "https://*/"],
