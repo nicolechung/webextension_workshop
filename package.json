@@ -1,4 +1,6 @@
 {
+  "name": "web_extension_workshop_popup",
+  "version": "0.2",
   "targets": {
     "webext-dev": {
       "sourceMap": {
@@ -10,8 +12,10 @@
   },
   "scripts": {
     "clean:dist": "rm -rf dist",
-    "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
-    "build": "parcel build src/manifest.json --config @parcel/config-webextension"
+    "start:v2": "parcel watch src/manifest2/manifest.json --host localhost --config @parcel/config-webextension",
+    "build:v2": "parcel build src/manifest2/manifest.json --config @parcel/config-webextension",
+    "start:v3": "parcel watch src/manifest3/manifest.json --host localhost --config @parcel/config-webextension",
+    "build:v3": "parcel build src/manifest3/manifest.json --config @parcel/config-webextension"
   },
   "devDependencies": {
     "@parcel/config-webextension": "2.6.2",
