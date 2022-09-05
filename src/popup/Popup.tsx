@@ -21,7 +21,7 @@ export const Popup = () => {
         className="text-lg flex-none py-1 px-3 rounded-lg bg-emerald-100 text-emerald-600 mr-sm flex items-center justify-center"
       >
         <img
-          src="../assets/cat_512.png"
+          src="../up_/assets/cat_512.png"
           alt="cat icon"
           className="w-8 h-8 mr-3"
         />
@@ -32,7 +32,7 @@ export const Popup = () => {
         className="text-lg flex-none py-1 px-3 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center"
       >
         <img
-          src="../assets/dog_512.png"
+          src="../up_/assets/dog_512.png"
           alt="dog icon"
           className="w-8 h-8 mr-3"
         />

@@ -17,14 +17,14 @@ declare let window: CustomWindow;
 
     switch (command) {
       case "swap-with-cats":
-        url = (browser.extension as any).getURL(
-          "assets/nine-koepfer-lpgAlv8I7V8-unsplash.jpg"
+        url = browser.runtime.getURL(
+          "./up_/assets/nine-koepfer-lpgAlv8I7V8-unsplash.jpg"
         );
         break;
 
       case "swap-with-dogs":
-        url = (browser.extension as any).getURL(
-          "assets/ben-michel-Uyn3kXAaZX8-unsplash.jpg"
+        url = browser.runtime.getURL(
+          "./up_/assets/ben-michel-Uyn3kXAaZX8-unsplash.jpg"
         );
         break;
 
@@ -36,6 +36,7 @@ declare let window: CustomWindow;
     if (url) {
       var images = document.getElementsByTagName("img");
       for (var i = 0; i < images.length; i++) {
+        console.log("swapping with image: ", url);
         images[i].src = url;
       }
     }
