@@ -32,7 +32,7 @@ BUT, once you start using `browser` you won't be able to develop in localhost. I
 
 Note: it seems like you can make changes, but you'll have to disregard "🚨 Connection to the HMR server was lost" errors in Chrome. Parcel will handle the "reloading" for you.
 
-:lightbulb: This builds into `dist/webext-dev`!
+:lightbulb: This builds into `dist/`!
 
 ## Build mode
 
@@ -44,7 +44,7 @@ yarn build:v2
 yarn build:v3
 ```
 
-:lightbulb: This builds into `dist/webext-prod`!
+:lightbulb: This builds into `dist/`!
 
 ## manifest versions
 
