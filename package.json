@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@parcel/config-webextension": "2.6.2",
-    "autoprefixer": "10.4.7",
+    "autoprefixer": "10.4.11",
     "parcel": "2.6.2",
     "postcss": "8.4.14",
     "process": "^0.11.10",
