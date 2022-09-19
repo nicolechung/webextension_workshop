@@ -1,19 +1,19 @@
-import browser from "webextension-polyfill";
+import browser from 'webextension-polyfill'
 
-let currentTab: any;
+let currentTab: any
 
 browser.tabs
   .query({ active: true, currentWindow: true })
-  .then((tabs) => (currentTab = tabs[0]));
+  .then((tabs) => (currentTab = tabs[0]))
 
 export const Popup = () => {
   const handleCats = () => {
-    browser.tabs.sendMessage(currentTab.id, { command: "swap-with-cats" });
-  };
+    browser.tabs.sendMessage(currentTab.id, { command: 'swap-with-cats' })
+  }
 
   const handleDogs = () => {
-    browser.tabs.sendMessage(currentTab.id, { command: "swap-with-dogs" });
-  };
+    browser.tabs.sendMessage(currentTab.id, { command: 'swap-with-dogs' })
+  }
   return (
     <div className="flex flex-col items-center gap-3 justify-center w-48 p-3 bg-gradient-to-r min-h-full from-emerald-500 to-emerald-400">
       <button
@@ -39,5 +39,5 @@ export const Popup = () => {
         dogs
       </button>
     </div>
-  );
-};
+  )
+}
