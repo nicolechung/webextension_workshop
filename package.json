@@ -20,7 +20,7 @@
   "devDependencies": {
     "@parcel/config-webextension": "2.7.0",
     "@types/react": "^18.0.20",
-    "@types/react-dom": "^18.0.6",
+    "@types/react-dom": "^18.0.9",
     "@types/webextension-polyfill": "^0.9.1",
     "autoprefixer": "10.4.11",
     "parcel": "2.7.0",
